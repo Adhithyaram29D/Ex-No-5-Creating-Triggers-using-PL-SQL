@@ -13,8 +13,7 @@
 8. Display the employee table, salary_log table.
 
 ### Program:
-# Developed By: AdhithyaRam D
-# Register No: 212222230008
+
 ### Create employee table
 ```
 sql
