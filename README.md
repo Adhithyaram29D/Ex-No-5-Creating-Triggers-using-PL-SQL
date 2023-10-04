@@ -15,21 +15,16 @@
 ### Program:
 
 ### Create employee table
-```
-sql
+```sql
 CREATE TABLE employee(empid NUMBER, empname VARCHAR(10), dept VARCHAR(10),salary NUMBER);
-sql
 ```
 ### Create salary_log table
-```
-sql
+```sql
 CREATE TABLE salary_log(log_id NUMBER , empid NUMBER,empname VARCHAR(10),
                         old_salary NUMBER,new_salary NUMBER,update_date DATE);
-sql
 ```
 ### PLSQL Trigger code
-```
-sql
+```sql
 CREATE OR REPLACE TRIGGER log_salary_update
 BEFORE UPDATE ON employee
 FOR EACH ROW
@@ -46,7 +41,6 @@ BEGIN
     END IF;
 END;
 /
-sql
 ```
 ### Output:
 ![Screenshot 2023-10-03 161552](https://github.com/Adhithyaram29D/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393540/26b52322-8534-484e-9510-d644492cd782)
